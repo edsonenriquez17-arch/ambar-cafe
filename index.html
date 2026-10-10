@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ÁMBAR — Café de Origen</title>
+  <meta name="description" content="ÁMBAR, café de especialidad peruano en Barranco, Lima. Del grano a la taza.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1609050471053-8636409f9f5b?w=2000&q=80&auto=format&fit=crop">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__word"><span>Á</span><span>M</span><span>B</span><span>A</span><span>R</span></div>
+    <div class="loader__count"><span id="count">0</span>%</div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label">Ver</span></div>
+  <img class="menu-float" id="menuFloat" alt="" aria-hidden="true">
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">ÁMBAR</a>
+    <nav class="nav__links">
+      <a href="#origen">Origen</a>
+      <a href="#carta">Carta</a>
+      <a href="#cafes">Cafés</a>
+      <a href="#visitanos">Visítanos</a>
+    </nav>
+    <a href="#visitanos" class="btn btn--ghost magnetic">Reservar</a>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1609050471053-8636409f9f5b?w=2000&q=80&auto=format&fit=crop" alt="Espresso cayendo del portafiltro">
+      </div>
+      <div class="hero__meta hero__meta--l reveal-up">Barranco, Lima<br>Est. 2026</div>
+      <div class="hero__meta hero__meta--r reveal-up">Café de especialidad<br>100% peruano</div>
+      <h1 class="hero__title">
+        <span class="line"><span>El ritual</span></span>
+        <span class="line"><span><em>del origen</em></span></span>
+      </h1>
+      <p class="hero__sub reveal-up">Granos de altura, tostados a mano en Lima.<br>Una taza que empieza a 2,000 metros.</p>
+      <a href="#manifiesto" class="hero__scroll" aria-label="Bajar">
+        <span>Scroll</span><i></i>
+      </a>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="manifesto" id="manifiesto">
+      <p class="eyebrow">— Manifiesto</p>
+      <p class="manifesto__text split-words">
+        Creemos que un buen café no se sirve, se revela. Detrás de cada taza hay una familia, una montaña y un año de trabajo.
+        Nuestro oficio es honrar ese camino: tostar con paciencia, preparar con precisión y servir con silencio.
+      </p>
+    </section>
+
+    <!-- Del grano a la taza (horizontal) -->
+    <section class="journey" id="origen">
+      <div class="journey__track">
+        <div class="journey__intro">
+          <p class="eyebrow">— Del grano a la taza</p>
+          <h2 class="h2">Cuatro actos,<br><em>una taza.</em></h2>
+          <p class="muted">Desliza para recorrer el viaje.</p>
+        </div>
+        <article class="panel">
+          <div class="panel__img"><img src="https://images.unsplash.com/photo-1524350876685-274059332603?w=1400&q=80&auto=format&fit=crop" alt="Sacos de café en grano" loading="lazy"></div>
+          <div class="panel__txt"><span class="panel__n">01</span><h3>Origen</h3><p>Fincas familiares entre 1,600 y 2,200 m.s.n.m. en Cajamarca, Puno y Pasco. Compra directa, precio justo.</p></div>
+        </article>
+        <article class="panel">
+          <div class="panel__img"><img src="https://images.unsplash.com/photo-1551610290-e153ec567dd8?w=1400&q=80&auto=format&fit=crop" alt="Café tostado" loading="lazy"></div>
+          <div class="panel__txt"><span class="panel__n">02</span><h3>Tueste</h3><p>Lotes pequeños de 5 kg, perfilados uno por uno para revelar la dulzura natural del grano.</p></div>
+        </article>
+        <article class="panel">
+          <div class="panel__img"><img src="https://images.unsplash.com/photo-1522825397800-ddf6405fc258?w=1400&q=80&auto=format&fit=crop" alt="Preparación en filtro" loading="lazy"></div>
+          <div class="panel__txt"><span class="panel__n">03</span><h3>Preparación</h3><p>Agua a 93°, molienda al momento y recetas pesadas al gramo. Ciencia al servicio del sabor.</p></div>
+        </article>
+        <article class="panel">
+          <div class="panel__img"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=1400&q=80&auto=format&fit=crop" alt="Barista haciendo latte art" loading="lazy"></div>
+          <div class="panel__txt"><span class="panel__n">04</span><h3>La taza</h3><p>El último gesto. Servida en cerámica artesanal de Chulucanas, a la temperatura exacta.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__inner">
+        <span>Cajamarca ✦ Sandia, Puno ✦ Villa Rica ✦ Amazonas ✦ Chanchamayo ✦ Cusco ✦&nbsp;</span>
+        <span>Cajamarca ✦ Sandia, Puno ✦ Villa Rica ✦ Amazonas ✦ Chanchamayo ✦ Cusco ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- Carta -->
+    <section class="menu" id="carta">
+      <div class="menu__head">
+        <p class="eyebrow">— La carta</p>
+        <h2 class="h2">Lo que <em>servimos</em></h2>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item" data-img="photo-1596018589878-217d8603c4c6"><span class="menu__n">01</span><span class="menu__name">Espresso de origen</span><span class="menu__note">Cacao, panela, final largo</span><span class="menu__price">S/ 9</span></li>
+        <li class="menu__item" data-img="photo-1497636577773-f1231844b336"><span class="menu__n">02</span><span class="menu__name">Cappuccino</span><span class="menu__note">Leche texturizada, 180 ml</span><span class="menu__price">S/ 13</span></li>
+        <li class="menu__item" data-img="photo-1541469406036-71229832e06e"><span class="menu__n">03</span><span class="menu__name">V60 del día</span><span class="menu__note">Filtrado, notas florales</span><span class="menu__price">S/ 16</span></li>
+        <li class="menu__item" data-img="photo-1529892485617-25f63cd7b1e9"><span class="menu__n">04</span><span class="menu__name">Flat white</span><span class="menu__note">Doble ristretto, microespuma</span><span class="menu__price">S/ 14</span></li>
+        <li class="menu__item" data-img="photo-1536227661368-deef57acf708"><span class="menu__n">05</span><span class="menu__name">Cold brew de Sandia</span><span class="menu__note">18 horas en frío, cítrico</span><span class="menu__price">S/ 15</span></li>
+        <li class="menu__item" data-img="photo-1610632380989-680fe40816c6"><span class="menu__n">06</span><span class="menu__name">Ritual de cata</span><span class="menu__note">3 orígenes, guiado por barista</span><span class="menu__price">S/ 38</span></li>
+      </ul>
+    </section>
+
+    <!-- Cafés de origen -->
+    <section class="beans" id="cafes">
+      <div class="beans__head">
+        <p class="eyebrow">— Cafés de origen</p>
+        <h2 class="h2">Microlotes <em>de temporada</em></h2>
+      </div>
+      <div class="beans__grid">
+        <article class="bean">
+          <div class="bean__img"><img src="https://images.unsplash.com/photo-1609050471053-8636409f9f5b?w=1000&q=80&auto=format&fit=crop" alt="Café de Cajamarca" loading="lazy"><span class="tag">Edición limitada</span></div>
+          <h3>Cajamarca — Finca El Mirador</h3>
+          <p class="bean__notes">Durazno · Panela · Cacao</p>
+          <dl class="bean__spec"><div><dt>Altura</dt><dd>1,950 m</dd></div><div><dt>Proceso</dt><dd>Lavado</dd></div><div><dt>Variedad</dt><dd>Caturra</dd></div></dl>
+          <p class="bean__price">S/ 58 <small>/ 250 g</small></p>
+        </article>
+        <article class="bean">
+          <div class="bean__img"><img src="https://images.unsplash.com/photo-1595827295672-97a059484442?w=1000&q=80&auto=format&fit=crop" alt="Café de Sandia, Puno" loading="lazy"><span class="tag">Puntaje 88</span></div>
+          <h3>Sandia, Puno — Cooperativa Tunki</h3>
+          <p class="bean__notes">Jazmín · Mandarina · Miel</p>
+          <dl class="bean__spec"><div><dt>Altura</dt><dd>2,100 m</dd></div><div><dt>Proceso</dt><dd>Honey</dd></div><div><dt>Variedad</dt><dd>Bourbon</dd></div></dl>
+          <p class="bean__price">S/ 64 <small>/ 250 g</small></p>
+        </article>
+        <article class="bean">
+          <div class="bean__img"><img src="https://images.unsplash.com/photo-1579265898841-79c7890d69cf?w=1000&q=80&auto=format&fit=crop" alt="Café de Villa Rica" loading="lazy"><span class="tag">Agotándose</span></div>
+          <h3>Villa Rica — Finca Santa Rosa</h3>
+          <p class="bean__notes">Frutos rojos · Vino · Chocolate</p>
+          <dl class="bean__spec"><div><dt>Altura</dt><dd>1,700 m</dd></div><div><dt>Proceso</dt><dd>Natural</dd></div><div><dt>Variedad</dt><dd>Geisha</dd></div></dl>
+          <p class="bean__price">S/ 89 <small>/ 250 g</small></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Espacio -->
+    <section class="space">
+      <div class="space__head">
+        <p class="eyebrow">— El espacio</p>
+        <h2 class="h2">Un lugar para <em>detenerse</em></h2>
+      </div>
+      <div class="space__grid">
+        <figure class="space__a"><img data-speed="-8" src="https://images.unsplash.com/photo-1567880905822-56f8e06fe630?w=1600&q=80&auto=format&fit=crop" alt="Barra del café" loading="lazy"></figure>
+        <figure class="space__b"><img data-speed="8" src="https://images.unsplash.com/photo-1469631423273-6995642a6a40?w=1200&q=80&auto=format&fit=crop" alt="Máquinas de espresso" loading="lazy"></figure>
+        <figure class="space__c"><img data-speed="-5" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1200&q=80&auto=format&fit=crop" alt="Personas en el café" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- Visítanos -->
+    <section class="visit" id="visitanos">
+      <div class="visit__bg"><img src="https://images.unsplash.com/photo-1596018589878-217d8603c4c6?w=2000&q=80&auto=format&fit=crop" alt="" loading="lazy"></div>
+      <div class="visit__inner">
+        <p class="eyebrow">— Visítanos</p>
+        <h2 class="visit__title">Te guardamos<br><em>una taza.</em></h2>
+        <div class="visit__cols">
+          <div><h4>Dirección</h4><p>Av. Pedro de Osma 210<br>Barranco, Lima</p></div>
+          <div><h4>Horario</h4><p>Lun – Vie · 7:30 – 20:00<br>Sáb – Dom · 8:30 – 21:00</p></div>
+          <div><h4>Contacto</h4><p>hola@ambarcafe.pe<br>+51 999 000 000</p></div>
+        </div>
+        <a href="#" class="btn btn--solid magnetic">Reservar mesa</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__big">ÁMBAR</div>
+    <div class="footer__row">
+      <form class="newsletter" id="newsletter">
+        <label for="email">Recibe los nuevos microlotes antes que nadie</label>
+        <div class="newsletter__field"><input id="email" type="email" required placeholder="tu@email.com"><button type="submit">→</button></div>
+        <p class="newsletter__ok" id="nlOk" hidden>Gracias. Te escribiremos con la próxima cosecha.</p>
+      </form>
+      <div class="footer__links"><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Mayoristas</a></div>
+    </div>
+    <p class="footer__legal">© 2026 ÁMBAR Café de Origen · Lima, Perú</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
