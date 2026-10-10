@@ -192,7 +192,10 @@ em { font-style: italic; color: var(--copper); }
 .step h4 span, .book__card h4 span { color: var(--copper); margin-right: 10px; }
 .bk-hint { color: var(--cream-dim); font-size: 14px; }
 
-.days { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: thin; }
+.days { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: thin; scrollbar-color: rgba(184,115,51,.6) transparent; }
+.days::-webkit-scrollbar { height: 4px; }
+.days::-webkit-scrollbar-track { background: transparent; }
+.days::-webkit-scrollbar-thumb { background: rgba(184,115,51,.6); border-radius: 4px; }
 .day, .slot, .pax button, .table { font-family: var(--sans); color: var(--cream); cursor: pointer; transition: background .3s, border-color .3s, color .3s, opacity .3s; }
 .day { flex: 0 0 74px; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 14px 0; border: 1px solid var(--line); border-radius: 6px; background: none; }
 .day b { font: 300 26px/1 var(--serif); }
