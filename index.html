@@ -32,7 +32,7 @@
       <a href="#cafes">Cafés</a>
       <a href="#visitanos">Visítanos</a>
     </nav>
-    <a href="#visitanos" class="btn btn--ghost magnetic">Reservar</a>
+    <a href="#reservar" class="btn btn--ghost magnetic">Reservar</a>
   </header>
 
   <main id="top">
@@ -158,6 +158,63 @@
       </div>
     </section>
 
+    <!-- Reservas -->
+    <section class="book" id="reservar">
+      <div class="book__head">
+        <p class="eyebrow">— Reservas</p>
+        <h2 class="h2">Reserva tu <em>mesa</em></h2>
+        <p class="book__live"><i></i> Disponibilidad en vivo · 5 mesas · hasta 4 personas por mesa</p>
+        <p class="book__demo" id="bkDemo" hidden>Modo demostración: las reservas se guardan solo en este navegador.</p>
+      </div>
+
+      <div class="book__grid">
+        <div class="book__steps">
+          <div class="step">
+            <h4><span>01</span> Fecha</h4>
+            <div class="days" id="bkDays" data-lenis-prevent></div>
+          </div>
+          <div class="step">
+            <h4><span>02</span> Hora</h4>
+            <div class="slots" id="bkSlots"></div>
+          </div>
+          <div class="step">
+            <h4><span>03</span> Personas</h4>
+            <div class="pax">
+              <button type="button" id="bkMinus" aria-label="Menos personas">−</button>
+              <output id="bkPax">2</output>
+              <button type="button" id="bkPlus" aria-label="Más personas">+</button>
+              <small>Máximo 4 por mesa</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="book__card">
+          <h4><span>04</span> Elige tu mesa</h4>
+          <div class="floor" id="bkFloor"></div>
+          <ul class="legend"><li><i class="l-free"></i>Libre</li><li><i class="l-sel"></i>Tu mesa</li><li><i class="l-busy"></i>Reservada</li></ul>
+
+          <form class="bk-form" id="bkForm" novalidate>
+            <div class="bk-sum" id="bkSum">Selecciona fecha, hora y mesa.</div>
+            <input name="nombre" placeholder="Nombre y apellido" autocomplete="name" required minlength="2" maxlength="80">
+            <input name="telefono" type="tel" placeholder="Celular / WhatsApp" autocomplete="tel" required pattern="[+0-9 ]{6,20}">
+            <input name="email" type="email" placeholder="Email (opcional)" autocomplete="email" maxlength="120">
+            <p class="bk-err" id="bkErr" role="alert"></p>
+            <button type="submit" class="btn btn--solid" id="bkSubmit" disabled>Confirmar reserva</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="bk-ok" id="bkOk" hidden>
+        <div class="bk-ok__box">
+          <p class="eyebrow">— Reserva confirmada</p>
+          <h3>Te esperamos.</h3>
+          <p id="bkOkTxt"></p>
+          <p class="bk-ok__code" id="bkOkCode"></p>
+          <button type="button" class="btn btn--ghost" id="bkOkClose">Cerrar</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Visítanos -->
     <section class="visit" id="visitanos">
       <div class="visit__bg"><img src="https://images.unsplash.com/photo-1596018589878-217d8603c4c6?w=2000&q=80&auto=format&fit=crop" alt="" loading="lazy"></div>
@@ -169,7 +226,7 @@
           <div><h4>Horario</h4><p>Lun – Vie · 7:30 – 20:00<br>Sáb – Dom · 8:30 – 21:00</p></div>
           <div><h4>Contacto</h4><p>hola@ambarcafe.pe<br>+51 999 000 000</p></div>
         </div>
-        <a href="#" class="btn btn--solid magnetic">Reservar mesa</a>
+        <a href="#reservar" class="btn btn--solid magnetic">Reservar mesa</a>
       </div>
     </section>
   </main>
@@ -191,5 +248,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="main.js"></script>
+  <script src="reservas.js"></script>
 </body>
 </html>
